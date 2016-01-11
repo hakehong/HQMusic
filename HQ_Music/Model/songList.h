@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface songList : NSObject
-@property (nonatomic, copy) NSString *album;
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *artist;
 @property (nonatomic, copy) NSString *picture;

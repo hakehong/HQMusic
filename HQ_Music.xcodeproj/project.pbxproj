@@ -13,13 +13,16 @@
 		F13BC43E1C3B765F004C0F30 /* songList.m in Sources */ = {isa = PBXBuildFile; fileRef = F13BC43D1C3B765F004C0F30 /* songList.m */; };
 		F181608D1C2D33D00039FB7E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F181608C1C2D33D00039FB7E /* MainStoryboard.storyboard */; };
 		F18160921C2D7C1E0039FB7E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18160911C2D7C1E0039FB7E /* AVFoundation.framework */; };
+		F19EE5A91C433F1A00CEADF1 /* HqTabBraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE5A81C433F1A00CEADF1 /* HqTabBraViewController.m */; };
+		F19EE5AC1C43409400CEADF1 /* RecentPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE5AB1C43409400CEADF1 /* RecentPlayViewController.m */; };
+		F19EE5AF1C4340CD00CEADF1 /* DownloadMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE5AE1C4340CD00CEADF1 /* DownloadMusicViewController.m */; };
+		F19EE5B21C4340EE00CEADF1 /* LoveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F19EE5B11C4340EE00CEADF1 /* LoveListViewController.m */; };
 		F1F12DE11C3D2E9A00712D38 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F12DE01C3D2E9A00712D38 /* HttpTool.m */; };
 		F1F6D9C11C2A8B320024FDF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6D9C01C2A8B320024FDF3 /* main.m */; };
 		F1F6D9C41C2A8B320024FDF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6D9C31C2A8B320024FDF3 /* AppDelegate.m */; };
 		F1F6D9CD1C2A8B320024FDF3 /* HQ_Music.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1F6D9CB1C2A8B320024FDF3 /* HQ_Music.xcdatamodeld */; };
 		F1F6D9CF1C2A8B320024FDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F6D9CE1C2A8B320024FDF3 /* Assets.xcassets */; };
 		F1F6D9D21C2A8B320024FDF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F6D9D01C2A8B320024FDF3 /* LaunchScreen.storyboard */; };
-		F1F6D9DB1C2A8B820024FDF3 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F6D9DA1C2A8B820024FDF3 /* MainTableViewController.m */; };
 		FA25C65AB550371A26E0FA8B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE05E453305C9DD8FF5195E /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,14 @@
 		F13BC43D1C3B765F004C0F30 /* songList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = songList.m; sourceTree = "<group>"; };
 		F181608C1C2D33D00039FB7E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F18160911C2D7C1E0039FB7E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F19EE5A71C433F1A00CEADF1 /* HqTabBraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqTabBraViewController.h; sourceTree = "<group>"; };
+		F19EE5A81C433F1A00CEADF1 /* HqTabBraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqTabBraViewController.m; sourceTree = "<group>"; };
+		F19EE5AA1C43409400CEADF1 /* RecentPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPlayViewController.h; sourceTree = "<group>"; };
+		F19EE5AB1C43409400CEADF1 /* RecentPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPlayViewController.m; sourceTree = "<group>"; };
+		F19EE5AD1C4340CD00CEADF1 /* DownloadMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadMusicViewController.h; sourceTree = "<group>"; };
+		F19EE5AE1C4340CD00CEADF1 /* DownloadMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadMusicViewController.m; sourceTree = "<group>"; };
+		F19EE5B01C4340EE00CEADF1 /* LoveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoveListViewController.h; sourceTree = "<group>"; };
+		F19EE5B11C4340EE00CEADF1 /* LoveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoveListViewController.m; sourceTree = "<group>"; };
 		F1F12DDF1C3D2E9A00712D38 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		F1F12DE01C3D2E9A00712D38 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		F1F6D9BC1C2A8B320024FDF3 /* HQ_Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQ_Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,8 +58,6 @@
 		F1F6D9CE1C2A8B320024FDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F6D9D11C2A8B320024FDF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F6D9D31C2A8B320024FDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1F6D9D91C2A8B820024FDF3 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		F1F6D9DA1C2A8B820024FDF3 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +137,18 @@
 				F13BC4381C3B65A5004C0F30 /* Model */,
 				F1F6D9C21C2A8B320024FDF3 /* AppDelegate.h */,
 				F1F6D9C31C2A8B320024FDF3 /* AppDelegate.m */,
-				F1F6D9D91C2A8B820024FDF3 /* MainTableViewController.h */,
-				F1F6D9DA1C2A8B820024FDF3 /* MainTableViewController.m */,
+				F19EE5A71C433F1A00CEADF1 /* HqTabBraViewController.h */,
+				F19EE5A81C433F1A00CEADF1 /* HqTabBraViewController.m */,
 				F11A5C031C2AC0AA007A2A35 /* ChannelListTableViewController.h */,
 				F11A5C041C2AC0AA007A2A35 /* ChannelListTableViewController.m */,
 				F11A5BFE1C2ABB2E007A2A35 /* PlayViewController.h */,
 				F11A5BFF1C2ABB2E007A2A35 /* PlayViewController.m */,
+				F19EE5AA1C43409400CEADF1 /* RecentPlayViewController.h */,
+				F19EE5AB1C43409400CEADF1 /* RecentPlayViewController.m */,
+				F19EE5AD1C4340CD00CEADF1 /* DownloadMusicViewController.h */,
+				F19EE5AE1C4340CD00CEADF1 /* DownloadMusicViewController.m */,
+				F19EE5B01C4340EE00CEADF1 /* LoveListViewController.h */,
+				F19EE5B11C4340EE00CEADF1 /* LoveListViewController.m */,
 				F1F6D9D01C2A8B320024FDF3 /* LaunchScreen.storyboard */,
 				F1F6D9D31C2A8B320024FDF3 /* Info.plist */,
 				F1F6D9CB1C2A8B320024FDF3 /* HQ_Music.xcdatamodeld */,
@@ -274,14 +289,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19EE5B21C4340EE00CEADF1 /* LoveListViewController.m in Sources */,
+				F19EE5AF1C4340CD00CEADF1 /* DownloadMusicViewController.m in Sources */,
 				F13BC43B1C3B681E004C0F30 /* HQChannels.m in Sources */,
-				F1F6D9DB1C2A8B820024FDF3 /* MainTableViewController.m in Sources */,
 				F1F6D9C41C2A8B320024FDF3 /* AppDelegate.m in Sources */,
 				F1F6D9CD1C2A8B320024FDF3 /* HQ_Music.xcdatamodeld in Sources */,
 				F11A5C011C2ABB2E007A2A35 /* PlayViewController.m in Sources */,
 				F1F6D9C11C2A8B320024FDF3 /* main.m in Sources */,
 				F11A5C051C2AC0AA007A2A35 /* ChannelListTableViewController.m in Sources */,
+				F19EE5A91C433F1A00CEADF1 /* HqTabBraViewController.m in Sources */,
 				F13BC43E1C3B765F004C0F30 /* songList.m in Sources */,
+				F19EE5AC1C43409400CEADF1 /* RecentPlayViewController.m in Sources */,
 				F1F12DE11C3D2E9A00712D38 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

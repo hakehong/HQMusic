@@ -16,7 +16,7 @@
 @interface PlayViewController()
 @property(strong,nonatomic)AVAudioPlayer *audioPlayer;
 @property (nonatomic,strong) FSAudioStream *audioStream;
-@property (nonatomic, copy) NSString *album;
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *artist;
 @property (nonatomic, copy) NSString *picture;
@@ -46,7 +46,18 @@
     
     _songDictionary1 =appdelegate.delegateDictionary;
     songList *songs =[songList mj_objectWithKeyValues:_songDictionary1];
-    self.navigationItem.title =songs.artist;
+   
+    /**
+     * 怎么设置导航栏的标题显示两行文字
+     * 第一行显示歌曲名称，第二行显示歌手名称
+     */
+    UILabel *label =[[UILabel alloc]init];
+    label.numberOfLines =2;
+    label.text =[NSString stringWithFormat:@"%@/%@",songs.title,songs.artist];
+//    
+//    NSString *title =[NSString stringWithFormat:@"%@%@",songs.title,songs.artist];
+    
+    self.navigationItem.title =label.text;
     _url =songs.url;
     NSURL *imageUrl =[NSURL URLWithString:songs.picture];
     NSData *data =[NSData dataWithContentsOfURL:imageUrl];

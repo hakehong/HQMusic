@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "MainTableViewController.h"
 #import <AVFoundation/AVAudioSession.h>
+#import "HqTabBraViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,9 +20,8 @@
     // Override point for customization after application launch.
     self.window =[[UIWindow alloc]init];
     self.window.frame =[UIScreen mainScreen].bounds;
-    MainTableViewController *mainView =[[MainTableViewController alloc]init];
-    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:mainView];
-    self.window.rootViewController =nav;
+    HqTabBraViewController *tabBarController =[[HqTabBraViewController alloc]init];
+    self.window.rootViewController =tabBarController;
     [self.window makeKeyAndVisible];
    
     return YES;
