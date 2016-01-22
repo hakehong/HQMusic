@@ -10,6 +10,7 @@
 #import "HQChannels.h"
 #import "MJExtension.h"
 #import "songList.h"
+#import "AFNetworking.h"
 @implementation HttpTool
 +(NSArray *)getChannelList:(NSArray *)channelList
 {

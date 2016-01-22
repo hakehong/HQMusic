@@ -14,23 +14,33 @@
 #import "songList.h"
 #import "HttpTool.h"
 #import "AppDelegate.h"
+#import "FSAudioStream.h"
 @interface ChannelListTableViewController ()
 @property(strong,nonatomic)PlayViewController *playView;
 @property(copy,nonatomic)NSArray *channelList;
-
+@property (nonatomic,strong) FSAudioStream *audioStream;
 @property(copy,nonatomic)NSArray *songsInfo;
 @property (nonatomic, copy) NSDictionary *songsDictionary;
 @end
 
 @implementation ChannelListTableViewController
-- (void)setDelegate:(id <PassSongsInfoDelegate>) passDelegatee
-{
-    self.passDelegate = passDelegatee;
-    
-}
+//- (void)setDelegate:(id <PassSongsInfoDelegate>) passDelegatee
+//{
+//    self.passDelegate = passDelegatee;
+//    
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIImage *image =[UIImage imageNamed:@"cm2_list_icn_loading1"];
+    image =[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithImage:image style:UIBarButtonItemStyleDone target:self action:@selector(pushPlayView)];
+    //  设置返回按钮样式
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@""
+                                   style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [self.navigationItem setBackBarButtonItem:backButton];
 //    self.passDelegate =self.playView;
     /**
      * 使用的AFNetworking3.0，AFHTTPRequestOperationManager修改为AFHTTPSessionManager
@@ -40,7 +50,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url ];
     
     //将请求的url数据放到NSData对象中
-    NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSData *response = [NSURLConnection sendSynchronousRequest:request re turningResponse:nil error:nil];
     
     //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
     NSDictionary *resultDict = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableContainers error:nil];
@@ -69,7 +79,20 @@
 //    NSLog(@"list数组的内容为--》%@", name );
     
 }
-
+-(void)pushPlayView
+{
+    /**
+     * 点击音乐按钮当有音乐播放时，音乐播放不暂停，
+     * 音乐播放时，音乐按钮产生动画。
+     */
+//    if(!self.audioStream.isPlaying)
+//    {
+//        [self.audioStream play];
+//    }
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    self.playView = [storyBoard instantiateViewControllerWithIdentifier:@"playView"];
+    [self.navigationController pushViewController:self.playView animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -152,12 +175,16 @@
 ////   NSLog(@"%@",self.playView.url1);
 //    
 //    [self.passDelegate PassSongsInfo:MusicUrl picture:MusicPicture artist:MusicArtist];
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    self.playView = [storyBoard instantiateViewControllerWithIdentifier:@"playView"];
-//    NSNotification *notification =[NSNotification notificationWithName:@"passSongsInfo" object:self userInfo:self.songsDictionary];
+    //    NSNotification *notification =[NSNotification notificationWithName:@"passSongsInfo" object:self userInfo:self.songsDictionary];
 //    //通过通知中心发送通知
 //    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    /*
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    self.playView = [storyBoard instantiateViewControllerWithIdentifier:@"playView"];
+
     [self.navigationController pushViewController:self.playView animated:YES];
+     */
+    [self pushPlayView];
     
 
 }

@@ -50,7 +50,7 @@
     childVC.tabBarItem.selectedImage = selectedImage;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:childVC];
 //    212 60 51
-    nav.navigationBar.barTintColor =[UIColor colorWithRed:212.0/255 green:60.0/255 blue:51.0/255 alpha:1];
+//    nav.navigationBar.barTintColor =[UIColor colorWithRed:212.0/255 green:60.0/255 blue:51.0/255 alpha:1];
     [self  addChildViewController:nav];
 
 }

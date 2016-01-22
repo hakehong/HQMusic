@@ -13,5 +13,5 @@
 
 @end
 @interface ChannelListTableViewController : UITableViewController
-@property (strong,nonatomic) id <PassSongsInfoDelegate> passDelegate;
+//@property (strong,nonatomic) id <PassSongsInfoDelegate> passDelegate;
 @end

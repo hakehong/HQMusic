@@ -7,7 +7,14 @@
 //
 
 #import "DownloadMusicViewController.h"
-
+@interface DownloadMusicViewController()
+@end
 @implementation DownloadMusicViewController
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+}
 
 @end

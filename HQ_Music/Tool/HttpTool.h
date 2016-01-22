@@ -11,4 +11,5 @@
 @interface HttpTool : NSObject
 +(NSArray *)getChannelList:(NSArray *)channelList;
 //+(void)getSongsInfo:(NSArray *)channelList pathRow:(NSString *)row
+//+(NSString *)downLoadSongs:(NSString *)url filePath:(NSString *)filePath;
 @end

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "songList.h"
 #import "ChannelListTableViewController.h"
-@interface PlayViewController : UIViewController <PassSongsInfoDelegate>
-@property(strong,nonatomic)songList *songs;
+@interface PlayViewController : UIViewController
+@property(nonatomic, assign,getter=isPlaying) BOOL playing;
 @end

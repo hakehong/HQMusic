@@ -13,4 +13,7 @@
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *artist;
 @property (nonatomic, copy) NSString *picture;
+@property (nonatomic,assign)NSNumber *length;
+@property(nonatomic, assign,getter=isLoved) BOOL loved;
+
 @end
