@@ -36,8 +36,8 @@
 		F18160911C2D7C1E0039FB7E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F19EE5A71C433F1A00CEADF1 /* HqTabBraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqTabBraViewController.h; sourceTree = "<group>"; };
 		F19EE5A81C433F1A00CEADF1 /* HqTabBraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqTabBraViewController.m; sourceTree = "<group>"; };
-		F1E6EEED1C47F48400D0C7D8 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpTool.h; path = Tool/HttpTool.h; sourceTree = "<group>"; };
-		F1E6EEEE1C47F48400D0C7D8 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpTool.m; path = Tool/HttpTool.m; sourceTree = "<group>"; };
+		F1E6EEED1C47F48400D0C7D8 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		F1E6EEEE1C47F48400D0C7D8 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		F1E6EEF21C47F60500D0C7D8 /* LoveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoveListViewController.h; sourceTree = "<group>"; };
 		F1E6EEF31C47F60500D0C7D8 /* LoveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoveListViewController.m; sourceTree = "<group>"; };
 		F1E6EEF91C47F60C00D0C7D8 /* RecentPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPlayViewController.h; sourceTree = "<group>"; };
@@ -98,6 +98,8 @@
 		F1E6EEEC1C47F48400D0C7D8 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F1E6EEED1C47F48400D0C7D8 /* HttpTool.h */,
+				F1E6EEEE1C47F48400D0C7D8 /* HttpTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -304,8 +306,6 @@
 				F1F6D9C31C2A8B320024FDF3 /* AppDelegate.m */,
 				F19EE5A71C433F1A00CEADF1 /* HqTabBraViewController.h */,
 				F19EE5A81C433F1A00CEADF1 /* HqTabBraViewController.m */,
-				F1E6EEED1C47F48400D0C7D8 /* HttpTool.h */,
-				F1E6EEEE1C47F48400D0C7D8 /* HttpTool.m */,
 				F1E6EEFC1C47F60C00D0C7D8 /* View */,
 				F1F6D9CE1C2A8B320024FDF3 /* Assets.xcassets */,
 				F1F6D9BF1C2A8B320024FDF3 /* Supporting Files */,
